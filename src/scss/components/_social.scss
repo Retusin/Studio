@@ -1,0 +1,13 @@
+.social {
+  display: flex;
+
+  &__item {
+    &:not(:last-child) {
+      margin-right: 16px;
+    }
+
+    @include big-mobile {
+      margin: 0 auto;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+.reviews-slider {
+  &__img {
+    margin-right: 66px;
+    border-radius: 500px 0 500px 500px;
+    max-width: 413px;
+    max-height: 385px;
+
+    @include small-tablet {
+      margin-right: 0;
+    }
+
+    @include mobile {
+      max-width: 100%;
+      max-height: 374px;
+    }
+  }
+
+  &__slide {
+    display: flex;
+    padding-top: 116px;
+    background-image:
+      url("../img/review-dots.svg"),
+      url("../img/review-elipse.svg");
+    background-position: top 72px left 226px, bottom 129px left;
+    background-repeat: no-repeat;
+
+    @include small-tablet {
+      flex-direction: column;
+      align-items: center;
+      background-position: top 72px left 370px, bottom 316px left 139px;
+    }
+
+    @include mobile {
+      background-position: top 72px left 370px, bottom 345px left 66px;
+    }
+  }
+
+  &__wrapper {
+    width: 50%;
+  }
+
+  &__info {
+    padding-top: 82px;
+    max-width: 412px;
+
+    @include small-tablet {
+      padding-top: 45px;
+      padding-bottom: 50px;
+      text-align: center;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 23px;
+    font-size: 23px;
+    line-height: 30px;
+    color: #000;
+  }
+
+  &__text {
+    margin: 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+  }
+}
+
+.swiper .swiper-pagination {
+  left: 104px;
+  bottom: 114px;
+
+  @include desktop {
+    bottom: 88px;
+  }
+
+  @include big-tablet {
+    left: 174px;
+  }
+
+  @include small-tablet {
+    left: 0;
+    bottom: 0;
+  }
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background: #e7f0fc;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet-active {
+  background: #2639ed;
+}
+
+.swiper .swiper-pagination .swiper-pagination-bullet:not(:last-child) {
+  margin-right: 26px;
+
+  @include desktop {
+    margin-right: 18px;
+  }
+}

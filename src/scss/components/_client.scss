@@ -1,0 +1,75 @@
+.client {
+  padding-top: 20px;
+  padding-bottom: 94px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+
+    @include tablet {
+      flex-direction: column;
+    }
+  }
+
+  &__info {
+    max-width: 336px;
+
+    @include tablet {
+      margin: 0 auto;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 15px;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 18px;
+    line-height: 160%;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    @include tablet {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    @include big-mobile {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+    padding-top: 48px;
+
+    &:not(:last-child) {
+      margin-right: 60px;
+
+      @include tablet {
+        margin-right: 0;
+      }
+    }
+
+    @include tablet {
+      padding-right: 67px;
+      padding-left: 67px;
+    }
+  }
+}

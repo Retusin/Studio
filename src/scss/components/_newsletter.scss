@@ -1,0 +1,54 @@
+.newsletter {
+  padding-top: 250px;
+  padding-bottom: 239px;
+  background-image: url("../img/form.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+    justify-content: center;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info {
+    margin-right: 71px;
+
+    @include tablet {
+      margin-right: 0;
+      text-align: center;
+      color: #000;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 16px;
+    font-size: 39px;
+    line-height: 49px;
+    color: #000;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 18px;
+    line-height: 160%;
+    color: #757575;
+
+    @include tablet {
+      margin-bottom: 50px;
+      color: #000;
+    }
+  }
+
+  &__form {
+    padding-top: 8px;
+  }
+
+  @include mobile {
+    background-size: cover;
+  }
+}

@@ -1,0 +1,76 @@
+.hero {
+  position: relative;
+  padding-top: 123px;
+  padding-bottom: 260px;
+  background-image: url("../img/hero-bg.jpg");
+  background-position: right top;
+  background-repeat: no-repeat;
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 69px;
+    bottom: 122px;
+    width: 404px;
+    height: 154px;
+    background-image: url("../img/dots.svg");
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 41px;
+    max-width: 479px;
+    font-size: 39px;
+    line-height: 49px;
+    color: #000;
+
+    @include tablet {
+      max-width: 100%;
+    }
+
+    @include mobile {
+      font-size: 30px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 55px;
+    max-width: 470px;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+
+    @include tablet {
+      margin: 0 auto;
+      margin-bottom: 55px;
+      max-width: 90%;
+    }
+
+    @include mobile {
+      font-size: 15px;
+    }
+  }
+
+  &__btn {
+    position: relative;
+    z-index: 1;
+    border-radius: 60px;
+    padding: 20px 40px;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.065em;
+    color: #fff;
+    background: #2639ed;
+  }
+
+  @include mid-desktop {
+    background-size: 580px;
+  }
+
+  @include tablet {
+    margin: 0 auto;
+    text-align: center;
+    background: none;
+  }
+}

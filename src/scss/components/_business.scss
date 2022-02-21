@@ -1,0 +1,67 @@
+.business {
+  padding-bottom: 188px;
+  background-image: url("../img/business-bg.jpg");
+  background-position: left 100% top 142px;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+
+    @include tablet {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__cards {
+    display: flex;
+    flex-wrap: wrap;
+
+    @include tablet {
+      justify-content: center;
+    }
+  }
+
+  &__info {
+    margin-right: 122px;
+    padding-top: 361px;
+    max-width: 396px;
+
+    @include small {
+      margin-right: 9px;
+    }
+
+    @include tablet {
+      margin: 0 auto;
+      padding-top: 90px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 49px;
+    color: #000;
+
+    @include tablet {
+      text-align: center;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 160%;
+
+    @include tablet {
+      margin-bottom: 50px;
+      text-align: center;
+    }
+  }
+
+  @include tablet {
+    border-radius: 75px;
+    background-image: none;
+    background-color: #f4f9ff;
+  }
+}

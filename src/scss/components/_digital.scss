@@ -1,0 +1,56 @@
+.digital {
+  padding-bottom: 120px;
+  background-image: url("../img/krug.jpg");
+  background-position: bottom 54px left 581px;
+  background-repeat: no-repeat;
+
+  &__inner {
+    display: flex;
+
+    @include mid-desktop {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__info {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 120px;
+    max-width: 653px;
+    background-image: url("../img/digitel-text.jpg");
+    background-position: top 58px left 81px;
+    background-repeat: no-repeat;
+
+    @include mid-desktop {
+      order: -1;
+      margin: 0 auto;
+      padding-left: 0;
+      text-align: center;
+      background-position: top 58px left 2px;
+      background-size: 24%;
+    }
+
+    @include mobile {
+      background-size: 30%;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-bottom: 33px;
+    font-size: 39px;
+    line-height: 49px;
+    color: #000;
+  }
+
+  &__description {
+    margin: 0;
+    font-size: 16px;
+    line-height: 160%;
+    color: #565656;
+
+    @include mid-desktop {
+      margin-bottom: 50px;
+    }
+  }
+}
